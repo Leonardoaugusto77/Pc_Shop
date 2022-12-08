@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90px;
+    background-color: #1E1E1E;
+}
+
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#logo_img{
+    width: 35px;
+}
+
+.pesquisa > input{
+    width: 300px;
+    height: 45px;
+}
+.pesquisa > button{
+    width: 70px;
+    height: 45px;
+    margin-left: 5px;
+}
+.pesquisa > i{
+    font-size: 60px;
+}
+
+.logo_img{
+    padding-right: 15px;
+}
+
+.logo_img > img{
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-item{
+    position: relative;
+}
+
+.navbar > .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 220px;
+    align-items: center;
+    list-style: none;
+    background-color: #1E1E1E;
+}
+
+.navbar > .nav-menu a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+}
+
+.dropdown{
+    font-size: 20px;
+    color: #ffff;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+    transform: 0.2ms;
+    color: rgba(255, 0, 0, 0.572);
+}
+
+.submenu{
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    max-width: max-content;
+    display: block;
+    overflow: hidden;
+    background-color: #1E1E1E;
+    margin-top: 10px;
+    transform: translateY(15%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.submenu.show{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.itens-menu-drop{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    background-color: #1E1E1E;
+    width: 200px;
+    margin-left: 5px;
+}
+
+.itens-menu-drop-li:hover{
+    background-color: rgba(255, 0, 0, 0.572);
+    transition: 2ms;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.img-menu{
+    width: 200px;
+    height: 160px;
+    margin-left: 5px;
+}
+
+.submenu-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+
+}
+
+.submenu-items{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+
+#Slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+   
+}
+
+.btSlider{
+    background-color: transparent;
+    height: 30%;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 15px;
+}
+
+#dvload{
+    width: 100%;
+    height: 5px;
+    margin-top: 25%;
+    border: 1px solid #000;
+
+}
+
+#dvbarra{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#arrows{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50%;
+    align-items: center;
+
+}
+
+#btntop{
+    cursor: pointer;
+}
+
+
+.produtos{
+    padding-top: 15px;
+    font-size: 25px;
+    color: white;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.container-imgs-peças{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr );   
+    padding: 0 120px;
+}
+.colum01{
+    padding-left: 50px; 
+}
+
+.colum02{
+    padding-right: 50px; 
+}
+
+.sectionM{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.sectionM, .modelo-mais-vendido > #h3-modelos{
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.sectionM, .modelo-mais-vendido > #descricao-modelos{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0  20px 35px;
+    color: rgb(0, 0, 0);
+}
+
+.quemsomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1E1E1E;
+    margin-bottom: 45px;
+}
+
+.quemsomos > h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align:center ;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.photo-01{
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 25px;
+}
+
+.photo-02{
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 25px;
+    color: #fff;
+}
+
+.photo-03{
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 25px;
+}
+
+.depoimentos > .depoimento-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos, .depoimento-container > .circulo{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 50%;
+    
+    margin: 0 auto 25px auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1E1E1E;
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+}
+
+.form-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 45px;
+    width: 500px;
+    height: 350px;
+    background-color: #fff;
+}
+
+.label-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+
+
+
+
+@media (max-width: 1100px){
+    .container-imgs-peças{
+        padding: 0 40px;
+    }
+    .img01s{
+        width: 400px;
+
+    }
+}
+
+
+@media (max-width: 768px){
+    body{
+       width: 101vw;
+    }    
+
+    .container-imgs-peças{
+        padding: 0;
+    }
+
+    .img01s{
+        width: 300px;
+    }
+
+    .navbar > .nav-menu{
+        padding: 20px 110px;
+    }
+
+    .imgs-quemsomos{
+        margin-top: 35px;
+        width: 250px;
+    }
+
+    .img-maisvendido{
+        width: 400px;
+    }
+}
+
+
+
+
