@@ -1,12 +1,3 @@
-document.querySelector('#submit').addEventListener('click', ()=>{
-    alert('Pesquisando!')
-    return
-})
-
-
-
-
-
 document.addEventListener('click', (e)=>{
     const isDropdownBtn = e.target.classList.contains('dropdown')
 
@@ -33,6 +24,26 @@ document.addEventListener('click', (e)=>{
 })
 
 
-document.body.addEventListener('load', ()=>{
-    window.alert("olá")
-})
+
+
+let nome, email, whats
+let Esubmit = document.querySelector('#btn-submit')
+
+const submit = () =>{
+    nome = document.querySelector('#Nome').value
+    email = document.querySelector('#Email').value
+    whats = document.querySelector('#Whats').value
+   
+    if(nome == '' || email == '' || isNaN(whats)){
+        window.alert("Confira suas informações novamente!")
+        return
+    } else {
+        window.alert("Confira seu Email Por gentileza!")
+        return
+    }
+}
+
+
+Esubmit.addEventListener("click", submit)
+
+

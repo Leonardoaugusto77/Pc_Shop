@@ -7,6 +7,39 @@
     box-sizing: border-box;
 }
 
+
+
+.circle{
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.549);
+
+
+    position: fixed;
+    left: 90vw;
+    top: 50vw;
+}
+
+#btn-up{
+    background: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.circle:hover, #btn-up:hover{
+    background-color: #0A66C2;
+    transition: 2s;
+    font-weight: bold;
+    color: #000;
+
+}
+
 #header{
     display: flex;
     align-items: center;
@@ -107,6 +140,7 @@
     background-color: #1E1E1E;
     width: 200px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .itens-menu-drop-li:hover{
@@ -301,15 +335,31 @@
     height: 400px;
 }
 
-.form-container  {
+.form-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 45px;
-    width: 500px;
-    height: 350px;
+    margin: auto;
+    border-radius: 30px;
+    width: 50%;
+    height: 320px;
     background-color: #fff;
+
+}
+.form-nome, .form-email, .form-whatsApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin-top: 10px;
+
+}
+
+.form-container > h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .label-container{
@@ -320,8 +370,69 @@
     height: 50px;
 }
 
+.input-enviar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.input-enviar > input{
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+}
 
+.redes-socias{
+    width: 100%;
+    height: 25vh;
+   
+}
+
+.title-socials{
+    margin-top: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.redes{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.youtube{
+    color: red;
+    letter-spacing: 45px;
+}
+
+.instagram{
+    color:#8a3ab9;
+    letter-spacing: 45px;
+}
+
+.linkedln{
+    color: #0A66C2;
+}
+
+.footer{
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    height: 100px;
+    background-color: #1E1E1E;
+}
+
+.footer > a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+} 
 
 @media (max-width: 1100px){
     .container-imgs-peças{
@@ -359,6 +470,16 @@
     .img-maisvendido{
         width: 400px;
     }
+}
+
+@media (max-width:380px) {
+    .circle{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    
 }
 
 
