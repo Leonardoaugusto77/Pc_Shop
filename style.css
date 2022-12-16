@@ -461,6 +461,14 @@
        width: 101vw;
     }    
 
+    #Slider{
+        background-size: 1000px;
+        width: 100%;
+        height: 200px;
+        
+       
+    }
+
     .container-imgs-peças{
         padding: 0;
     }

@@ -7,12 +7,17 @@ let imgAtual
 let maxImg
 
 const preLoad = () =>{
+    if(screen === '768px'){
+        window.alert('teste')
+    }
     for(let i = 0; i < 5; i++){
         s
         imgs[i] = new Image()
         imgs[i].src = 'imgs/s' +s+ ".svg"
         s++
     }
+
+   
 }
 
 const carregaImg = (img) =>{
@@ -72,19 +77,20 @@ document.addEventListener('click', (e)=>{
 let nome, email, whats
 let Esubmit = document.querySelector('#btn-submit')
 
-const submit = () =>{
+const submit = (e) =>{
     nome = document.querySelector('#Nome').value
     email = document.querySelector('#Email').value
     whats = document.querySelector('#Whats').value
    
     if(nome == '' || email == '' || isNaN(whats)){
         window.alert("Confira suas informações novamente!")
-        return
+        return e.preventDefault()
     } else {
         window.alert("Confira seu Email Por gentileza!")
-        return
+        return e.preventDefault()
     }
 }
+
 
 
 Esubmit.addEventListener("click", submit)
