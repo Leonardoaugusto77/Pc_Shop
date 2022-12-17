@@ -8,9 +8,11 @@
      <li>Esse foi projeto foi primeiramente Prototipado no Figma</li>
      <li>Fiz o projeto pensando na necessidade das lojas de apresentar o seu produto</li>
      <li>Projeto é apenas tela inicial de uma loja online</li>
+     <li> Link --> https://taupe-dieffenbachia-abd45c.netlify.app/ </li>
      
 </ul>
 <br>
 
+ <img src="Screenshot_1.png" alt="">
 
 
